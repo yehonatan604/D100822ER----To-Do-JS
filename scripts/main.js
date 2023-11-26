@@ -1,16 +1,6 @@
-import { Task } from "./Models/Task.js";
+import { DomService } from "./Services/Dom.service.js";
+import { LocalStorageService } from "./Services/LocalStorage.service.js";
 
-// const par = document.createElement("p");
-// par.innerHTML = 'Hello!!!';
-// par.className = 'text-primary';
-// par.style = 'font-size:36px';
+const storage = new LocalStorageService();
 
-// document.body.appendChild(par);
-
-let task = new Task('Program');
-let task2 = new Task('Eat');
-let task3 = new Task('Program some more');
-
-console.log(task);
-console.log(task2);
-console.log(task3);
+const dom = new DomService(storage);
