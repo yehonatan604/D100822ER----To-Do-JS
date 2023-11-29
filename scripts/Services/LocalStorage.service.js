@@ -8,10 +8,10 @@ export class LocalStorageService {
     ];
 
     constructor() {
-        this.verifyData();
+        this.getData();
     }
 
-    verifyData = () => {
+    getData = () => {
         const tasks = localStorage.getItem('tasks');
 
         if (!tasks || tasks === '[]') {

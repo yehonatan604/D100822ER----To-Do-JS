@@ -1,8 +1,14 @@
 tr {
     text-align: center;
-    vertical-align: center;
+    vertical-align: middle;
+
 }
 
 .bg-silver {
     background-color: rgb(231, 231, 231);
+}
+
+.fa:hover {
+    color: blueviolet;
+    cursor: pointer;
 }

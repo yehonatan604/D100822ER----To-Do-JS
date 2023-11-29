@@ -6,6 +6,13 @@ export class Task {
 
     constructor(content) {
         if (content) {
+            const data = localStorage.getItem('tasks');
+            const length = data && JSON.parse(data).length;
+
+            if (length) {
+                Task.#count = length;
+            }
+
             this.content = content;
             this.created = new Date();
 
